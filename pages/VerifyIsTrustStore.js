@@ -10,8 +10,8 @@ export default function verify(dataJson,rootIssuer,rootNroSerial,rootFingerprint
             // console.log("Numero de Serial(Root): ", cert.nmSerial)
             // console.log("Firma Digital(Root): ", cert.certSha)
             // console.log("Nombre(CN) del Emisor(Root): ", cert.issuer)
-            isStore = true
+            return true
         }
     })
-    return isStore
+    return false;
 }
