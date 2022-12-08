@@ -6,7 +6,7 @@ import stylesTrust from '../styles/Trust.module.css'
 
 import Pagination from './components/paginationTrust'
 import paginate from './Paginate'
-import isTrustRoots from '../public/trustStore/TrusModel'
+import isTrustRoots from './trustStore/TrusModel'
 
 const Tablemodels = ({data,name}) => {
 

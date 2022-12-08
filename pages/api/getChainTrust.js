@@ -1,4 +1,4 @@
-import { setgetValidateBrowser } from '../../public/trustStore/SetValidate';
+import { setgetValidateBrowser } from '../trustStore/SetValidate';
 import verify from '../VerifyIsTrustStore';
 
 export default async function handler(req, res) {

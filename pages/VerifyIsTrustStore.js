@@ -1,4 +1,4 @@
-import isTrustRoots from '../public/trustStore/TrusModel'
+import isTrustRoots from './trustStore/TrusModel'
 
 export default function verify(dataJson,rootIssuer,rootNroSerial,rootFingerprint) {
 

@@ -1,4 +1,4 @@
-import { setgetValidateBrowser } from "../../public/trustStore/SetValidate";
+import { setgetValidateBrowser } from "../trustStore/SetValidate";
 
 export default async function handler(req, res) {
     const validateObj = setgetValidateBrowser("get");
