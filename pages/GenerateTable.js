@@ -10,14 +10,15 @@ import isTrustRoots from '../public/trustStore/TrusModel'
 
 const Tablemodels = ({data,name}) => {
 
-    const [posts, setPosts] = useState([])
-    useEffect(() =>{
-        const getPosts = async () =>{
-            //const {data: res} = await axios.get('https://jsonplaceholder.typicode.com/posts')
-            setPosts(data)
-        }
-        getPosts()
-    },[])
+    
+    // const [posts, setPosts] = useState([])
+    // useEffect(() =>{
+    //     const getPosts = async () =>{
+    //         //const {data: res} = await axios.get('https://jsonplaceholder.typicode.com/posts')
+    //         setPosts(data)
+    //     }
+    //     getPosts()
+    // },[])
 
     //console.log(posts.length)
 
@@ -29,7 +30,7 @@ const Tablemodels = ({data,name}) => {
     //console.log(useState(1))
     //console.log(currentPage)
     
-    const PaginatePosts = paginate(posts, currentPage, pageSize)
+    const PaginatePosts = paginate(data, currentPage, pageSize)
 
     return (
         <div className={styles.container} >
@@ -74,7 +75,7 @@ const Tablemodels = ({data,name}) => {
                         
                     </tbody>
                 </table>
-                <Pagination items = {posts.length} pageSize = {pageSize} currentPage = {currentPage}  onPageChange = {handlePageChange}/>
+                <Pagination items = {data.length} pageSize = {pageSize} currentPage = {currentPage}  onPageChange = {handlePageChange}/>
             </main>
         
 
